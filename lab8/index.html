@@ -9,6 +9,44 @@
         <script>
 
             // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                
+                // Handle case where answer is correct
+                let correct = document.querySelector('#correct');
+                // When this element is clicked on, run the following function
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#response1').innerHTML = "Correct!";
+                    document.querySelector('#response1').style.color = 'green';
+                });
+                
+                // Handle case where answer is wrong
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
+                        document.querySelector('#response1').innerHTML = "Incorrect";
+                        document.querySelector('#response1').style.color = 'red';
+                    });
+                }
+                
+                // Handles free response
+                let submit = document.querySelector('#check');
+                submit.addEventListener('click', function() {
+                    let response = document.querySelector('#input');
+                    if (response.value == "Zayn Malik") {
+                        document.querySelector('#response2').innerHTML = "Correct!";
+                        document.querySelector('#response2').style.color = 'green';
+                        response.style.backgroundColor = 'green';
+                    }
+                    else
+                    {
+                        document.querySelector('#response2').innerHTML = "Incorrect";
+                        document.querySelector('#response2').style.color = 'red';
+                        response.style.backgroundColor = 'red';
+                    }
+                });
+            });
 
         </script>
 
@@ -26,6 +64,12 @@
                 <hr>
 
                 <!-- TODO: Add multiple choice question here -->
+                <h3>How many members were in One Direction in 2014?</h3>
+                <h4 id="response1"></h4>
+                <button class="incorrect">Three</button>
+                <button class="incorrect">Four</button>
+                <button id="correct">Five</button>
+                <button class="incorrect">Six</button>
 
             </div>
 
@@ -34,6 +78,10 @@
                 <hr>
 
                 <!-- TODO: Add free response question here -->
+                <h3>Which member left One Direction?</h3>
+                <h4 id="response2"></h4>
+                <input id="input" autocomplete="off" type="text">
+                <button id="check">Check</button>
 
             </div>
 
