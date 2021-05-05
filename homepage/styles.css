@@ -1,13 +1,138 @@
 /* Default CSS layout for narrow screens  */
 
 
+
+/***** GENERAL STYLES *****/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* Equivalent to 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+}
+
+p {
+    margin: 10rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2rem;
+    margin: 10rem 0;
+}
+
+
+
+/***** GENERAL LAYOUT *****/
+
+.flex {
+    align-items: center;
+    display: flex;
+}
+
+
+
+/***** HEADER AND NAVIGATION *****/
+
+header {
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav li {
+    padding: 0rem 0.6rem;
+}
+
+nav a {
+    color: #8B8B8B;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #333;
+    transition: all .4s ease-in-out;
+}
+
+.logo {
+    color: #00A8A8;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+/***** MAIN CONTENT: BIO *****/
+
+/***** MAIN CONTENT: MAIN PROJECTS *****/
+
+/***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
+
+/***** FOOTER *****/
+
+
 /* Landscape phones and tablets */
 @media (min-width: 576px) {
+    
+    
+    /***** HEADER AND NAVIGATION *****/
+    
+    header {
+        justify-content: space-between;
+        padding: 4rem 6rem;
+    }
+    
+    nav li {
+        padding: 0rem 1rem;
+    }
+    
+    nav a {
+        font-size: 1.8rem;
+    }
+    
+    
+    /***** MAIN CONTENT: BIO *****/
+
+    /***** MAIN CONTENT: MAIN PROJECTS *****/
+    
+    /***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
+    
+    /***** FOOTER *****/
+    
     
 }
 
 
-/* Laptops and desktops */
+
+
+
+/* Laptops and desktops; 992px */
 @media (min-width: 992px) {
-    
+
 }
