@@ -5,7 +5,9 @@
 /***** GENERAL STYLES *****/
 
 * {
+    /* setting width will include any padding and border; content will shrink to absorb any extra width */
     box-sizing: border-box;
+    /* global reset: all elements will have a padding and margin on 0 unless specified later */
     margin: 0;
     padding: 0;
 }
@@ -20,10 +22,6 @@ body {
     font-style: normal;
 }
 
-p {
-    margin: 10rem 0;
-}
-
 img {
     max-width: 100%;
 }
@@ -36,21 +34,10 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2 {
-    font-weight: 300;
-    line-height: 1.2rem;
-    margin: 10rem 0;
-}
-
 
 
 /***** GENERAL LAYOUT *****/
 
-.flex {
-    align-items: center;
-    display: flex;
-}
 
 
 
@@ -88,7 +75,7 @@ nav a:hover {
     letter-spacing: 0.5rem;
 }
 
-/***** MAIN CONTENT: BIO *****/
+/***** MAIN CONTENT: INTRO BIO *****/
 
 /***** MAIN CONTENT: MAIN PROJECTS *****/
 
@@ -102,22 +89,10 @@ nav a:hover {
     
     
     /***** HEADER AND NAVIGATION *****/
-    
-    header {
-        justify-content: space-between;
-        padding: 4rem 6rem;
-    }
-    
-    nav li {
-        padding: 0rem 1rem;
-    }
-    
-    nav a {
-        font-size: 1.8rem;
-    }
+
     
     
-    /***** MAIN CONTENT: BIO *****/
+    /***** MAIN CONTENT: INTRO BIO *****/
 
     /***** MAIN CONTENT: MAIN PROJECTS *****/
     
@@ -132,7 +107,19 @@ nav a:hover {
 
 
 
-/* Laptops and desktops; 992px */
+/* Laptops and desktops */
 @media (min-width: 992px) {
 
+    /***** HEADER AND NAVIGATION *****/
+
+    
+    
+    /***** MAIN CONTENT: INTRO BIO *****/
+
+    /***** MAIN CONTENT: MAIN PROJECTS *****/
+    
+    /***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
+    
+    /***** FOOTER *****/
+    
 }
