@@ -22,62 +22,171 @@ body {
     font-style: normal;
 }
 
+h2 {
+    font-size: 2.2rem;
+    margin-top: 0.4em;
+}
+
 img {
     max-width: 100%;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+.dark-teal {
+    color: #00A8A8;
+}
+
+.light-teal {
+    color: #76CBCA;
+}
+
+.dark-grey {
+    color: #333;
+}
+
+.light-grey {
+    color: #8B8B8B;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.extra-light {
+    font-weight: 200;
+}
 
 
 /***** GENERAL LAYOUT *****/
 
+.container {
+    margin: 0.5em auto;
+    max-width: 102em;
+    width: 90%;
+}
 
+main {
+    margin: 5em 0;
+}
+
+section {
+    margin: 4em 0;
+}
 
 
 /***** HEADER AND NAVIGATION *****/
 
 header {
-    justify-content: space-between;
-    padding: 2rem 2rem;
-}
-
-nav ul {
+    align-items: center;
     display: flex;
-    margin: 0;
+    justify-content: space-between;
+    margin: 2em 0;
 }
 
-nav li {
-    padding: 0rem 0.6rem;
-}
-
-nav a {
-    color: #8B8B8B;
+.logo, .navbar a {
     font-size: 1.4rem;
-    font-weight: 400;
 }
 
-nav a:hover {
+.logo {
+    letter-spacing: 0.5rem;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin-left: 1.4em;
+}
+
+
+.navbar a:hover {
     color: #333;
     transition: all .4s ease-in-out;
 }
 
-.logo {
-    color: #00A8A8;
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 0.5rem;
-}
 
 /***** MAIN CONTENT: INTRO BIO *****/
 
+.intro {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+}
+
+.intro a:hover {
+    color: #9FDADA;
+    transition: all .4s ease-in-out;
+}
+
+
 /***** MAIN CONTENT: MAIN PROJECTS *****/
+
+.main-projects {
+    margin-top: 7em;
+}
+
+.main-project {
+    margin: 3em 0;
+}
+
+.main-project-image img {
+    max-width: 100%;
+}
+
+.main-project-info {
+    margin-top: 0.8em;
+}
+
+.tags {
+    display: flex;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 1em;
+    padding: 0.2em 1em;
+    margin-right: 1em;
+}
+
+.cocobot li {
+    background-color: #F8F0FB;
+    color: #BB6BD9;
+}
+
+.expedia li {
+    background-color: #FFFCE8;
+    color: #F2C94C;
+}
+
+.main-project-info p {
+    font-size: 1.65rem;
+    line-height: 2.5rem;
+    margin-top: 0.4em;
+}
+
 
 /***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
 
@@ -87,10 +196,20 @@ nav a:hover {
 /* Landscape phones and tablets */
 @media (min-width: 576px) {
     
+    /***** GENERAL LAYOUT *****/
+    .container {
+        width: 80%;
+    }
     
     /***** HEADER AND NAVIGATION *****/
 
+    header {
+        margin: 2.5em 0;
+    }
     
+    .navbar li {
+        margin-left: 1.4em;
+    }
     
     /***** MAIN CONTENT: INTRO BIO *****/
 
@@ -112,7 +231,17 @@ nav a:hover {
 
     /***** HEADER AND NAVIGATION *****/
 
+    header {
+        margin: 4em 0;
+    }
     
+    .logo, .navbar a {
+        font-size: 1.8rem;
+    }
+    
+    .navbar li {
+        margin-left: 0.9em;
+    }
     
     /***** MAIN CONTENT: INTRO BIO *****/
 

@@ -9,7 +9,8 @@
     <link href="styles.css" rel="stylesheet">
     
     <!-- Nunito Sans Font-->
-    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +21,13 @@
     <div class="container">
       <!-- Beginning Header -->
       <header>
-        <a class="logo" href="index.html">TAMMY HO</a>
+        <a class="logo dark-teal bold" href="index.html">TAMMY HO</a>
         <!-- Beginning Navbar -->
         <nav>
           <ul class="navbar">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://drive.google.com/file/d/1mB3Wfu_VFGYe2wLmR7SCbNJfjOg22X6H/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a class="light-grey normal" href="index.html">Work</a></li>
+            <li><a class="light-grey normal" href="about.html">About</a></li>
+            <li><a class="light-grey normal" href="https://drive.google.com/file/d/1mB3Wfu_VFGYe2wLmR7SCbNJfjOg22X6H/view?usp=sharing" target="_blank">Resume</a></li>
           </ul>
         </nav>
         <!-- End of Navbar -->
@@ -36,53 +37,53 @@
       <main>
         <!-- Beginning Intro Bio -->
         <section>
-          <p class="intro">
+          <p class="intro dark-grey light">
             Hi there! I'm Tammy 👩🏻‍💻 — Front-End Developer with a background in user experience. 
-            Recent <a href="https://www.hcde.washington.edu/" target="_blank">Human-Centered Design &#38; Engineering</a>  grad @ UW.
-            Previously at <a href="https://www.cocobot.care/" target="_blank">CocoBot</a>.
+            Recent <a class="light-teal" href="https://www.hcde.washington.edu/" target="_blank">Human-Centered Design &#38; Engineering</a>  grad @ UW.
+            Previously at <a class="light-teal" href="https://www.cocobot.care/" target="_blank">CocoBot</a>.
           </p>
         </section>
         <!-- End of Intro Bio -->
         
         <!-- Beginning Main Projects -->
-        <section>
+        <section class="main-projects">
           <!-- Beginning Main Project #1 -->
           <div class="main-project cocobot">
-            <div class="main-project-info">
-              <ul class="tags">
-                <li class="tag">Client Project</li>
-                <li class="tag">UX / UI</li>
-              </ul>
-              <h2>CocoBot 🤖</h2>
-              <p>Helping caregivers care for themselves.</p>
-              <div class="links">
-                <a class="link" href="cocobot.html">Live Demo</a>
-                <a class="link" href="https://github.com/tammyh0">GitHub</a>
-              </div>
-            </div>
             <div class="main-project-image">
               <img src="/media/cocobot_preview.png" alt="CocoBot">
+            </div>
+            <div class="main-project-info">
+              <ul class="tags">
+                <li class="tag bold">Client Project</span>
+                <li class="tag bold">UX / UI</li>
+              </ul>
+              <h2>CocoBot 🤖</h2>
+              <p class="light-grey normal">Helping caregivers care for themselves.</p>
+              <div class="links">
+                <button type="button" class="btn btn-link" href="cocobot.html">Live Demo</button>
+                <button type="button" class="btn btn-link" href="https://github.com/tammyh0">GitHub</button>
+              </div>
             </div>
           </div>
           <!-- End of Main Project #1 -->
           
           <!-- Beginning Main Project #2 -->
           <div class="main-project expedia">
+            <div class="main-project-image">
+              <img src="/media/expedia_preview.png" alt="Expedia">
+            </div>
             <div class="main-project-info">
               <ul class="tags">
-                <li class="tag">Usability Testing</li>
-                <li class="tag">Web</li>
-                <li class="tag">UX / UI</li>
+                <li class="tag bold">Usability Testing</li>
+                <li class="tag bold">Web</li>
+                <li class="tag bold">UX / UI</li>
               </ul>
               <h2>Expedia</h2>
-              <p>Redesigning Expedia.com's vacation packages feature.</p>
+              <p class="light-grey normal">Redesigning Expedia.com's vacation packages feature.</p>
               <div class="links">
                 <a class="link" href="rumi.html">Live Demo</a>
                 <a class="link" href="https://github.com/tammyh0">GitHub</a>
               </div>
-            </div>
-            <div class="main-project-image">
-              <img src="/media/expedia_preview.png" alt="Expedia">
             </div>
           </div>
           <!-- End of Main Project #2 -->
