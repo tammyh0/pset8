@@ -1,6 +1,3 @@
-/* Default CSS layout for narrow screens  */
-
-
 
 /***** GENERAL STYLES *****/
 
@@ -24,8 +21,8 @@ body {
 
 h2 {
     font-size: 2.2rem;
-    margin: 0;
     font-weight: 700;
+    margin: 0;
 }
 
 img {
@@ -34,8 +31,8 @@ img {
 
 ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -88,8 +85,8 @@ a {
 }
 
 main {
-    margin: 5em 0;
     animation: transitionIn 0.75s;
+    margin: 5em 0;
 }
 
 @keyframes transitionIn {
@@ -118,7 +115,8 @@ header {
     margin: 2em 0;
 }
 
-.logo, .navbar a {
+.logo,
+.navbar a {
     font-size: 1.4rem;
 }
 
@@ -129,15 +127,14 @@ header {
 .navbar {
     align-items: center;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0;
-    flex-wrap: nowrap;
 }
 
 .navbar li {
     margin-left: 1.4em;
 }
-
 
 .navbar a:hover {
     color: #333;
@@ -189,13 +186,13 @@ header {
 }
 
 .tag {
+    border-radius: 1em;
     display: inline-block;
     font-size: 1.2rem;
-    border-radius: 1em;
-    padding: 0.2em 0.8em;
-    margin-top: 1.2em;
     margin-bottom: 1.2em;
     margin-right: 1em;
+    margin-top: 1.2em;
+    padding: 0.2em 0.8em;
 }
 
 .cocobot li {
@@ -211,28 +208,28 @@ header {
 .main-project-info p {
     font-size: 1.65rem;
     line-height: 2.5rem;
-    margin-top: 0.2em;
     margin-bottom: 0.8em;
+    margin-top: 0.2em;
 }
 
 .btn {
-    padding: 0;
     font-size: 1.4rem;
     margin-right: 1.2em;
+    padding: 0;
     transition: none;
 }
 
 .btn:hover {
     color: #333;
-    border-bottom: 2px solid rgba(0,0,0,.8);
+    border-bottom: 2px solid #333;
     transition: all .4s ease-in-out;
 }
 
 .btn-link {
+    border-bottom: 2px solid #8B8B8B;
     color: #333;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid rgba(0,0,0,.2);
 }
 
 
@@ -241,8 +238,13 @@ header {
 /***** FOOTER *****/
 
 
+
+
+
 /* Landscape phones and tablets */
+
 @media (min-width: 576px) {
+
 
     /***** GENERAL STYLES *****/
 
@@ -264,13 +266,15 @@ header {
         margin: 8em 0;
     }
 
+
     /***** HEADER AND NAVIGATION *****/
 
     header {
         margin: 4em 0;
     }
 
-    .logo, .navbar a {
+    .logo,
+    .navbar a {
         font-size: 1.6rem;
     }
 
@@ -289,6 +293,7 @@ header {
         font-size: 3.6rem;
         line-height: 5.2rem;
     }
+
 
     /***** MAIN CONTENT: MAIN PROJECTS *****/
 
@@ -311,8 +316,8 @@ header {
     .main-project-info p {
         font-size: 2rem;
         line-height: 2.7rem;
-        margin-top: 0.4em;
         margin-bottom: 1em;
+        margin-top: 0.4em;
     }
 
     .btn {
@@ -321,11 +326,11 @@ header {
     }
 
     .btn:hover {
-        border-bottom: 2.8px solid rgba(0,0,0,.8);
+        border-bottom: 2.8px solid #333;
     }
 
     .btn-link {
-        border-bottom: 2.8px solid rgba(0,0,0,.2);
+        border-bottom: 2.8px solid #8B8B8B;
     }
 
 
@@ -342,6 +347,7 @@ header {
 
 /* Laptops and desktops */
 @media (min-width: 992px) {
+
 
     /***** GENERAL STYLES *****/
 
@@ -363,6 +369,7 @@ header {
         margin-left: 2.4em;
     }
 
+
     /***** MAIN CONTENT: INTRO BIO *****/
 
     .intro {
@@ -378,10 +385,10 @@ header {
     }
 
     .main-project {
-        margin: 12em 0;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin: 12em 0;
     }
 
     .main-project-image {
@@ -389,8 +396,8 @@ header {
     }
 
     .main-project-info {
-        display: flex;
         align-items: center;
+        display: flex;
         margin-top: 1em;
         max-width: 45%;
     }
