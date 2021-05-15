@@ -354,14 +354,15 @@ header {
 
     /***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
     
-    .other-projects-images {
-        justify-content: space-between;
+    .other-projects-info p {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        margin-bottom: 1em;
+        margin-top: 0.4em;
     }
     
     .other-project {
-        margin: 1em 0;
-        width: 100%;
-        max-width: 200px;
+        margin: 1.6em 0;
     }
 
 
@@ -433,6 +434,22 @@ header {
 
 
     /***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
+    
+    .other-projects-info {
+        margin-top: 18em;
+    }
+    
+    .other-projects-images {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .other-project {
+        margin: 1em 0;
+        width: 100%;
+        max-width: 480px;
+    }
+    
 
     /***** FOOTER *****/
 
