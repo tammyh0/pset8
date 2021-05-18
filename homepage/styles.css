@@ -232,7 +232,7 @@ header {
 
 /***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
 
-.other-projects-info {
+.other-projects {
     margin-top: 8em;
 }
 
@@ -435,7 +435,7 @@ header {
 
     /***** MAIN CONTENT: OTHER PROJECTS PREVIEW *****/
     
-    .other-projects-info {
+    .other-projects {
         margin-top: 18em;
     }
     
@@ -446,8 +446,7 @@ header {
     
     .other-project {
         margin: 1em 0;
-        width: 100%;
-        max-width: 480px;
+        width: 48%;
     }
     
 
