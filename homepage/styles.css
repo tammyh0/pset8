@@ -85,20 +85,21 @@ a {
 }
 
 main {
-    animation: transitionIn 2s;
-    animation-delay: 0.5s;
+    animation: transitionInOut 1s;
     margin: 5em 0;
 }
 
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        /*transform: rotateX(-10deg);*/
-    }
-
-    to {
+@keyframes transitionInOut {
+    0% {
         opacity: 1;
-        /*transform: rotateX(0deg);*/
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
     }
 }
 
@@ -255,6 +256,25 @@ header {
 
 /***** FOOTER *****/
 
+.footer-info {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+
+.contact-greeting {
+    margin-bottom: 0.4em;
+    font-size: 1.4rem;
+}
+
+.footer-email:hover {
+    color: #8B8B8B;
+    transition: all .4s ease-in-out;
+}
+
+.footer-email:visited {
+    color: #333;
+}
 
 
 
@@ -368,7 +388,13 @@ header {
 
     /***** FOOTER *****/
 
-
+    .footer-info {
+        font-size: 1.8rem;
+    }
+    
+    .contact-greeting {
+        font-size: 2rem;
+    }
 }
 
 
@@ -452,4 +478,11 @@ header {
 
     /***** FOOTER *****/
 
+    .footer-info {
+        font-size: 2.2rem;
+    }
+    
+    .contact-greeting {
+        font-size: 2.4rem;
+    }
 }
