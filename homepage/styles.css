@@ -39,6 +39,7 @@ a {
     text-decoration: none;
 }
 
+/* Colors */
 .dark-teal {
     color: #00A8A8;
 }
@@ -55,6 +56,15 @@ a {
     color: #8B8B8B;
 }
 
+.cocobot-background-color {
+    background-color: #E2DAE5;
+}
+
+.expedia-background-color {
+    background-color: #FFFCE8;
+}
+
+/* Font */
 .bold {
     font-weight: 700;
 }
@@ -75,20 +85,17 @@ a {
     font-weight: 200;
 }
 
-.cocobot-background-color {
-    background-color: #E2DAE5;
-}
-
-.expedia-background-color {
-    background-color: #FFFCE8;
-}
-
+/* Additional Components */
 .main-project-info p,
 .other-project-overlay p {
     font-size: 1.65rem;
     line-height: 2.5rem;
     margin-bottom: 0.8em;
     margin-top: 0.2em;
+}
+
+.color-transition {
+    transition: color 0.25s;
 }
 
 
@@ -123,13 +130,34 @@ section {
     margin: 4em 0;
 }
 
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.center-items {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
 
 /***** HEADER AND NAVIGATION *****/
 
 header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     margin: 2em 0;
 }
 
@@ -143,19 +171,11 @@ header {
 }
 
 .navbar {
-    align-items: center;
-    display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 0;
 }
 
 .navbar li {
     margin-left: 1.4em;
-}
-
-.navbar a {
-    transition: color 0.25s;
 }
 
 .navbar a:hover {
@@ -166,20 +186,12 @@ header {
     color: #333;
 }
 
-.nav-link {
-    padding: 0;
-}
-
 
 /***** MAIN CONTENT: INTRO BIO *****/
 
 .intro {
     font-size: 2.8rem;
     line-height: 3.8rem;
-}
-
-.intro a {
-    transition: color 0.25s;
 }
 
 .intro a:hover {
@@ -195,14 +207,6 @@ header {
 
 .main-project {
     margin: 4.6em 0;
-}
-
-.main-project-image img {
-    max-width: 100%;
-}
-
-.tags {
-    display: flex;
 }
 
 .tag {
@@ -228,7 +232,6 @@ header {
 .btn {
     font-size: 1.4rem;
     margin-right: 1.2em;
-    padding: 0;
     transition: border-bottom 0.25s;
 }
 
@@ -239,8 +242,6 @@ header {
 
 .btn-link {
     border-bottom: 2px solid #8B8B8B;
-    color: #333;
-    font-weight: 600;
     text-decoration: none;
 }
 
@@ -258,27 +259,17 @@ header {
 }
 
 .other-projects-images {
-    display: flex;
     flex-wrap: wrap;
 }
 
 .other-project {
-    display: block;
     margin: 1em 0;
     position: relative;
-    width: 100%;
-}
-
-.other-project img {
-    display: block;
-    width: 100%;
 }
 
 .other-project-overlay {
-    align-items: center;
     border-radius: 5px;
     color: #ffffff;
-    display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
@@ -287,7 +278,6 @@ header {
     position: absolute;
     top: 0;
     transition: opacity 0.25s;
-    width: 100%;
 }
 
 .other-project-overlay:hover {
@@ -298,18 +288,12 @@ header {
 /***** FOOTER *****/
 
 .footer-info {
-    display: flex;
     font-size: 1.2rem;
-    justify-content: space-between;
 }
 
 .contact-greeting {
     margin-bottom: 0.4em;
     font-size: 1.4rem;
-}
-
-.footer-email {
-    transition: color 0.25s;
 }
 
 .footer-email:hover {
@@ -523,9 +507,4 @@ header {
         margin: 1em 0;
         width: 48%;
     }
-    
-
-    /***** FOOTER *****/
-
-
 }

@@ -6,6 +6,7 @@ const highlightActiveNav = () => {
     
     for (const link of navLinks) {
         link.addEventListener('click', e => {
+            
            // Remove active class on current link
            document.querySelector('.active').classList.remove('active');
            
