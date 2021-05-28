@@ -75,6 +75,22 @@ a {
     font-weight: 200;
 }
 
+.cocobot-background-color {
+    background-color: #E2DAE5;
+}
+
+.expedia-background-color {
+    background-color: #FFFCE8;
+}
+
+.main-project-info p,
+.other-project-overlay p {
+    font-size: 1.65rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.8em;
+    margin-top: 0.2em;
+}
+
 
 /***** GENERAL LAYOUT *****/
 
@@ -138,9 +154,12 @@ header {
     margin-left: 1.4em;
 }
 
+.navbar a {
+    transition: color 0.25s;
+}
+
 .navbar a:hover {
     color: #333;
-    transition: all .4s ease-in-out;
 }
 
 .navbar .active {
@@ -159,9 +178,12 @@ header {
     line-height: 3.8rem;
 }
 
+.intro a {
+    transition: color 0.25s;
+}
+
 .intro a:hover {
     color: #9FDADA;
-    transition: all .4s ease-in-out;
 }
 
 
@@ -203,24 +225,16 @@ header {
     color: #F2C94C;
 }
 
-.main-project-info p {
-    font-size: 1.65rem;
-    line-height: 2.5rem;
-    margin-bottom: 0.8em;
-    margin-top: 0.2em;
-}
-
 .btn {
     font-size: 1.4rem;
     margin-right: 1.2em;
     padding: 0;
-    transition: none;
+    transition: border-bottom 0.25s;
 }
 
 .btn:hover {
     color: #333;
     border-bottom: 2px solid #333;
-    transition: all .4s ease-in-out;
 }
 
 .btn-link {
@@ -249,8 +263,35 @@ header {
 }
 
 .other-project {
+    display: block;
     margin: 1em 0;
-    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.other-project img {
+    display: block;
+    width: 100%;
+}
+
+.other-project-overlay {
+    align-items: center;
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.25s;
+    width: 100%;
+}
+
+.other-project-overlay:hover {
+    opacity: 1;
 }
 
 
@@ -267,9 +308,12 @@ header {
     font-size: 1.4rem;
 }
 
+.footer-email {
+    transition: color 0.25s;
+}
+
 .footer-email:hover {
     color: #8B8B8B;
-    transition: all .4s ease-in-out;
 }
 
 .footer-email:visited {
@@ -288,6 +332,14 @@ header {
 
     h2 {
         font-size: 3rem;
+    }
+    
+    .main-project-info p,
+    .other-project-overlay p {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        margin-bottom: 1em;
+        margin-top: 0.4em;
     }
 
 
@@ -351,13 +403,6 @@ header {
         font-size: 1.4rem;
     }
 
-    .main-project-info p {
-        font-size: 2rem;
-        line-height: 2.7rem;
-        margin-bottom: 1em;
-        margin-top: 0.4em;
-    }
-
     .btn {
         font-size: 2rem;
         margin-right: 1.4em;
@@ -379,6 +424,10 @@ header {
         line-height: 2.7rem;
         margin-bottom: 1em;
         margin-top: 0.4em;
+    }
+    
+    .other-projects-images {
+        justify-content: space-between;
     }
     
     .other-project {
@@ -478,11 +527,5 @@ header {
 
     /***** FOOTER *****/
 
-    .footer-info {
-        font-size: 2.2rem;
-    }
-    
-    .contact-greeting {
-        font-size: 2.4rem;
-    }
+
 }
