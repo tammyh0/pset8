@@ -307,6 +307,9 @@ header {
 
 /***** ABOUT *****/
 
+.about-content {
+    flex-direction: column;
+}
 
 
 
